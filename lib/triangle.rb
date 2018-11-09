@@ -2,6 +2,9 @@ class Triangle
   attr_accessor :a, :b, :c
   
   def initialize(a, b, c)
+    if a < 1 || b < 1 || c < 1
+      raise TriangleError
+    end
     @a = a
     @b = b
     @c = c
