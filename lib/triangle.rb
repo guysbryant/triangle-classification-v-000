@@ -14,6 +14,6 @@ class Triangle
     if @a != @b && @b != @c && @a != @c
       return :scalene
     end
-    if 
+    if @a
   end
 end
