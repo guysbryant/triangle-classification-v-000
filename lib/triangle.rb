@@ -14,7 +14,7 @@ class Triangle
     if @a != @b && @b != @c && @a != @c
       return :scalene
     end
-    if @a == @b && @a != @c || @a == @c && @a !== @b
+    if @a == @b && @a != @c || @a == @c && @a != @b
       return :isosceles
     end
   end
