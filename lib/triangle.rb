@@ -2,7 +2,7 @@ class Triangle
   attr_accessor :a, :b, :c
   
   def initialize(a, b, c)
-    if a < 1 || b < 1 || c < 1
+    if a < 1 || b < 1 || c < 1 || (a + b) < c || (a + c) < b || (b + c) < a
       raise TriangleError
     else
       @a = a
