@@ -11,6 +11,9 @@ class Triangle
     if @a == @b && @b == @c
       return :equilateral
     end
-    if @a
+    if @a != @b && @b != @c && @a != @c
+      return :scalene
+    end
+    if 
   end
 end
