@@ -4,10 +4,10 @@ class Triangle
   def initialize(a, b, c)
     if a < 1 || b < 1 || c < 1
       raise TriangleError
-    end
-    @a = a
-    @b = b
-    @c = c
+    else
+      @a = a
+      @b = b
+      @c = c
   end
   
   def kind
